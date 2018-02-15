@@ -50,7 +50,8 @@ public class GlideBitmapLoader implements BitmapLoader {
 
         requestManager.asBitmap()
                 .load(model)
-                .apply(requestOptions);
+                .apply(requestOptions)
+                .into(imageView);
     }
 
     public static BitmapLoader createUsing(@NonNull CropView cropView) {
